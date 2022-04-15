@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZftpProject", "EZftp\EZftpProject.csproj", "{C9575962-7B25-4642-9DDA-EE7A1A5A6494}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "EZftpSetup", "EZftpSetup\EZftpSetup.vdproj", "{D185DD37-9184-482E-BCA0-30BE9CF01E78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9575962-7B25-4642-9DDA-EE7A1A5A6494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9575962-7B25-4642-9DDA-EE7A1A5A6494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9575962-7B25-4642-9DDA-EE7A1A5A6494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9575962-7B25-4642-9DDA-EE7A1A5A6494}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D185DD37-9184-482E-BCA0-30BE9CF01E78}.Debug|Any CPU.ActiveCfg = Debug
+		{D185DD37-9184-482E-BCA0-30BE9CF01E78}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C90F740C-F360-4A41-AFB1-3B34F5DF6F8B}
+	EndGlobalSection
+EndGlobal
