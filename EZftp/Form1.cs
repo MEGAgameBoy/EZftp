@@ -17,9 +17,7 @@ namespace EZftp
             InitializeComponent();
 
             if(File.Exists(SaveFilePath))
-            {
                 RefreshList();
-            }
         }
 
         private void btnGO_Click(object sender, EventArgs e)
@@ -45,9 +43,7 @@ namespace EZftp
             textBoxPort.Text = "";
 
             if (checkSave.Checked)
-            {
                 SAVE();
-            }
 
             checkSave.Checked = false;
 
@@ -89,10 +85,14 @@ namespace EZftp
         private void lblDelete_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             DialogResult result = MessageBox.Show("Voulez-vous vraiment suprimer les serveurs sauvgardé ?", "EZtfp", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
+            if (result == DialogResult.Yes && File.Exists(SaveFilePath))
             {
                 File.Delete(SaveFilePath);
                 listBoxSave.Items.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Erreur. Il n'y a aucun serveurs sauvegarder à supprimer.", "EZftp", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
